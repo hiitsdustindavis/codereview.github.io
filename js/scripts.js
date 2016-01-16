@@ -6,7 +6,6 @@ $(document).ready(function() {
     walk = $("select#walk").val();
     vacapref = $("select#vacapref").val();
 
-
     if (haircut === "2" && strangers === '1' && vacapref === '2'){
       $("#china").show();
       $("#ireland, #dubai", "#myanmar", "lagos").hide();
@@ -30,8 +29,6 @@ $(document).ready(function() {
       $("#lagos").show();
       $("#ireland, #dubai", "#china", "myanmar").hide();
     }
-
-
 
   event.preventDefault();
   });

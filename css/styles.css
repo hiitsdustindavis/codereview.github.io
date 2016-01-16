@@ -1,17 +1,8 @@
 #china, #dubai, #ireland, #myanmar, #lagos {
   display: none;
-  margin-top: 100px
+  margin-top: 5%
 }
 
-.destinations .container{
-margin-top: 50px
-background-color: red
-}
-
-.destinations img {
-  width: 100%;
-  max-height: auto;
-}
 .carousel-inner{
   width: 120%;
   margin-left: -10%;
