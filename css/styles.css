@@ -1,0 +1,33 @@
+#china, #dubai, #ireland, #myanmar {
+  display: none;
+  margin-top: 100px
+}
+
+.destinations .container{
+margin-top: 50px
+background-color: red
+}
+
+.destinations img {
+  width: 100%;
+  max-height: auto;
+}
+.carousel-inner{
+  width: 120%;
+  margin-left: -10%;
+}
+
+@media (min-width: 768px){
+  .carousel-inner{
+    width: 100%;
+    margin: 0;
+  }
+
+.carousel-caption {
+  font-size: 4em;
+}
+
+form {
+background-color: #fff3e5;
+padding: 20px;
+}
