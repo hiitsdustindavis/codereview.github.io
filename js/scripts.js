@@ -7,32 +7,30 @@ $(document).ready(function() {
     vacapref = $("select#vacapref").val();
 
 
-    if (haircut === "2" && strangers === '2' && vacapref === '2'){
+    if (haircut === "2" && strangers === '1' && vacapref === '2'){
       $("#china").show();
-      $("#ireland, #dubai", "#myanmar").hide();
-    } else {
-      $("#china", "#ireland, #dubai", "#myanmar").hide();
+      $("#ireland, #dubai", "#myanmar", "lagos").hide();
     }
-    if (walk === '2' && vacapref === '2'){
+
+    if (walk === '2' && vacapref === '2' && strangers === '1'){
       $("#dubai").show();
-      $("#ireland, #china", "#myanmar").hide();
+      $("#ireland, #china", "#myanmar", "lagos").hide();
     }
-    if (food === '1' || walk === '2' || strangers === '1'){
+
+    if (food === '1' && walk === '2' && strangers === '1'){
       $("#ireland").show();
-      $("#china, #dubai", "#myanmar").hide();
+      $("#china, #dubai", "#myanmar", "lagos").hide();
     }
-    if (haircut === '1'  && walk === '1' && strangers === "2"){
+
+    if (haircut === '1'  && walk === '1' && strangers === '2'){
       $("#myanmar").show();
-      $("#ireland, #dubai", "#china").hide();
+      $("#ireland, #dubai", "#china", "lagos").hide();
     }
-    // if (haircut === '2' && strangers === '2' && food === '2' && walk === '2' && vacapref === '2'){
-    //   $("#dubai").show();
-    //   $("#ireland, #china").hide();
-    // }
-    // if (haircut === '2' || strangers === '1' || food === '2' || walk === '2' || vacapref === '2'){
-    //   $("#ireland").show();
-    //   $("#dubai, #china").hide();
-    // }
+    if (haircut === '2'  && walk === '1' && strangers === '2'){
+      $("#lagos").show();
+      $("#ireland, #dubai", "#china", "myanmar").hide();
+    }
+
 
 
   event.preventDefault();
